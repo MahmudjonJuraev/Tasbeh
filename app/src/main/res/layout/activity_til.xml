@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/BackgroundColor"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".TilActivity">
+
+    <include layout="@layout/toolbarformenu"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YAQIN MASJID"
+        android:textColor="@color/timecolor"
+        android:fontFamily="@font/helveticaroundedbold"
+        android:textSize="24dp"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O'zbek (Lotin)"
+            android:layout_marginTop="34dp"
+            android:textColor="@color/CalendarColor"
+            android:fontFamily="@font/helveticaroundedbold"
+            android:textSize="25dp"
+            />
+        <TextView
+            android:id="@+id/Russian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rus (Kiril)"
+            android:layout_marginTop="56dp"
+            android:textColor="@color/CalendarColor"
+            android:fontFamily="@font/helveticaroundedbold"
+            android:textSize="24dp"/></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center|bottom"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Datamod"
+            android:textSize="10sp"
+            android:textColor="@color/purple_500"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" kompaniyasi tomonidan ishlab chiqilgan. Savollar va takliflar uchun"
+            android:fontFamily="@font/helveticaroundedbold"
+            android:textColor="@color/CalendarColor"
+            android:textSize="8sp"/>
+    </LinearLayout>
+</LinearLayout>

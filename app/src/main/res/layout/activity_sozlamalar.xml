@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/BackgroundColor"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    tools:context=".SozlamalarActivity">
+
+    <include layout="@layout/toolbarformenu"/>
+    <ScrollView
+        android:background="@color/BackgroundColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+
+    <LinearLayout
+        android:background="@color/BackgroundColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOZLAMALAR"
+        android:textColor="@color/timecolor"
+        android:fontFamily="@font/helveticaroundedbold"
+        android:textSize="24dp"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="80dp"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Halovat"
+            android:layout_marginTop="34dp"
+            android:textColor="@color/CalendarColor"
+            android:fontFamily="@font/helveticaroundedbold"
+            android:textSize="25dp"
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hudud tanlash"
+            android:layout_marginTop="56dp"
+            android:textColor="@color/CalendarColor"
+            android:fontFamily="@font/helveticaroundedbold"
+            android:textSize="24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tilni tanlash"
+            android:layout_marginTop="56dp"
+            android:textColor="@color/CalendarColor"
+            android:fontFamily="@font/helveticaroundedbold"
+            android:textSize="24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Murojat"
+            android:layout_marginTop="56dp"
+            android:textColor="@color/CalendarColor"
+            android:fontFamily="@font/helveticaroundedbold"
+            android:textSize="24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ulashish"
+            android:layout_marginTop="56dp"
+            android:textColor="@color/CalendarColor"
+            android:fontFamily="@font/helveticaroundedbold"
+            android:textSize="24dp"/>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:gravity="center"
+            >
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/BackgroundColor"
+                app:neumorph_shapeType="pressed"
+                app:neumorph_shadowElevation="2dp"
+                app:neumorph_shadowColorLight="@color/solid_light_color"
+                app:neumorph_shadowColorDark="@color/solid_dark_color"
+                android:gravity="center">
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+            </soup.neumorphism.NeumorphCardView>
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/Hududlanlash"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/BackgroundColor"
+                app:neumorph_shapeType="basin"
+                app:neumorph_shadowElevation="2dp"
+                app:neumorph_shadowColorLight="@color/solid_light_color"
+                app:neumorph_shadowColorDark="@color/solid_dark_color"
+                android:layout_marginTop="24dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="An"
+                    android:layout_gravity="center"
+                    android:textColor="@color/purple_500"
+                    android:fontFamily="@font/helveticaroundedbold"/>
+
+            </soup.neumorphism.NeumorphCardView>
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/Tilnlash"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/BackgroundColor"
+                app:neumorph_shapeType="basin"
+                app:neumorph_shadowElevation="2dp"
+                app:neumorph_shadowColorLight="@color/solid_light_color"
+                app:neumorph_shadowColorDark="@color/solid_dark_color"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Uz"
+                    android:layout_gravity="center"
+                    android:textColor="@color/purple_500"
+                    android:fontFamily="@font/helveticaroundedbold"/>
+
+            </soup.neumorphism.NeumorphCardView>
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/BackgroundColor"
+                app:neumorph_shapeType="basin"
+                android:layout_marginTop="24dp"
+                app:neumorph_shadowElevation="2dp"
+                app:neumorph_shadowColorLight="@color/solid_light_color"
+                app:neumorph_shadowColorDark="@color/solid_dark_color"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_send"/>
+
+            </soup.neumorphism.NeumorphCardView>
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/BackgroundColor"
+                app:neumorph_shapeType="basin"
+                app:neumorph_shadowElevation="2dp"
+                app:neumorph_shadowColorLight="@color/solid_light_color"
+                app:neumorph_shadowColorDark="@color/solid_dark_color"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_share"
+                   />
+
+            </soup.neumorphism.NeumorphCardView>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center|bottom"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Datamond"
+            android:textSize="10sp"
+            android:textColor="@color/purple_500"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" kompaniyasi tomonidan ishlab chiqilgan. Savollar va takliflar uchun"
+            android:fontFamily="@font/helveticaroundedbold"
+            android:textColor="@color/CalendarColor"
+            android:textSize="8sp"/>
+    </LinearLayout>
+    </LinearLayout>
+
+

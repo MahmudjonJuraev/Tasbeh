@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/BackgroundColor"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/BackgroundColor"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/BackgroundColor">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+      >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/taqvim"
+            android:fontFamily="@font/helveticaroundedbold"
+            android:textColor="@color/textcolor"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/BackgroundColor"
+            app:neumorph_shapeType="pressed"
+            app:neumorph_shadowElevation="2dp"
+            android:layout_gravity="center"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+            app:neumorph_shadowColorLight="@color/solid_light_color"
+            app:neumorph_shadowColorDark="@color/solid_dark_color"
+           >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helveticaroundedbold"
+                android:gravity="center"
+                android:text="13:00"
+                android:textColor="@color/timecolor"
+                android:textSize="60dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/peshin"
+                android:textColor="@color/textcolor"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15sp"
+            android:orientation="vertical">
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                app:neumorph_shadowElevation="2dp"
+                app:neumorph_shadowColorLight="@color/solid_light_color"
+                app:neumorph_shadowColorDark="@color/solid_dark_color"
+                android:background="@color/BackgroundColor"
+                app:neumorph_shapeType="pressed"
+
+             >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="14:00"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/helveticaroundedbold"
+                    android:textColor="@color/timecolor"
+                    android:textSize="32dp" />
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helveticaroundedbold"
+                android:text="@string/asr"
+                android:textColor="@color/textcolor"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                app:neumorph_shadowElevation="2dp"
+                app:neumorph_shadowColorLight="@color/solid_light_color"
+                app:neumorph_shadowColorDark="@color/solid_dark_color"
+                android:background="@color/BackgroundColor"
+                app:neumorph_shapeType="pressed"
+           >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="18:40"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/helveticaroundedbold"
+                    android:textColor="@color/timecolor"
+                    android:textSize="32dp" />
+
+            </soup.neumorphism.NeumorphCardView>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/hufton"
+                android:textColor="@color/textcolor"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/helveticaroundedbold"/>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15sp"
+            android:orientation="vertical">
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                app:neumorph_shadowElevation="2dp"
+                app:neumorph_shadowColorLight="@color/solid_light_color"
+                app:neumorph_shadowColorDark="@color/solid_dark_color"
+                android:background="@color/BackgroundColor"
+                app:neumorph_shapeType="pressed"
+             >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/helveticaroundedbold"
+                    android:gravity="center"
+                    android:text="16:34"
+                    android:textColor="@color/timecolor"
+                    android:textSize="32dp"
+                    android:textStyle="bold" />
+
+            </soup.neumorphism.NeumorphCardView>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/shom"
+                android:textColor="@color/textcolor"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/helveticaroundedbold"/>
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                app:neumorph_shadowElevation="2dp"
+                app:neumorph_shadowColorLight="@color/solid_light_color"
+                app:neumorph_shadowColorDark="@color/solid_dark_color"
+                android:background="@color/BackgroundColor"
+                app:neumorph_shapeType="pressed"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="05:42"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/helveticaroundedbold"
+                    android:textColor="@color/timecolor"
+                    android:textSize="32dp" />
+
+            </soup.neumorphism.NeumorphCardView>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/bomdod"
+                android:textColor="@color/textcolor"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/helveticaroundedbold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            app:neumorph_shadowElevation="2dp"
+            app:neumorph_shadowColorLight="@color/solid_light_color"
+            app:neumorph_shadowColorDark="@color/solid_dark_color"
+            android:background="@color/BackgroundColor"
+            app:neumorph_shapeType="pressed"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="08:03"
+                android:textStyle="bold"
+                android:fontFamily="@font/helveticaroundedbold"
+                android:textColor="@color/timecolor"
+                android:textSize="32dp" />
+
+        </soup.neumorphism.NeumorphCardView>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/quyosh"
+            android:textColor="@color/textcolor"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/helveticaroundedbold"/>
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="240dp"
+            android:layout_height="80dp"
+            app:neumorph_shadowElevation="2dp"
+            app:neumorph_shadowColorLight="@color/solid_light_color"
+            app:neumorph_shadowColorDark="@color/solid_dark_color"
+           android:background="@color/BackgroundColor"
+            app:neumorph_shapeType="pressed"
+
+           >
+            <TextView
+                android:layout_width="240dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Calendar"
+                android:fontFamily="@font/helveticaroundedbold"
+                android:textColor="@color/CalendarColor"
+                android:textSize="26dp" />
+        </soup.neumorphism.NeumorphCardView>
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

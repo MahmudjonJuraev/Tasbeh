@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tasbeh</string>
+    <string name="yaqin_masjid">YAQIN MASJID</string>
+    <string name="taqvim">TAQVIM</string>
+    <string name="peshin">Peshin</string>
+    <string name="asr">Asr</string>
+    <string name="shom">Shom</string>
+    <string name="hufton">Hufton</string>
+    <string name="bomdod">Bomdod</string>
+    <string name="quyosh">Quyosh</string>
+</resources>
